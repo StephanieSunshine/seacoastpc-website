@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  get 'index' => 'seacoastpc#index'
+
+  get 'testimonials' => 'seacoastpc#testimonials'
+  
+	get 'prices' => 'seacoastpc#prices'
+
+  get 'phonetablet' => 'seacoastpc#phonetablet'
+
+  get 'inhome' => 'seacoastpc#inhome'
+
+	root 'seacoastpc#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
